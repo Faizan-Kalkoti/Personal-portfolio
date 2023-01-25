@@ -1,0 +1,276 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.slidebar{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  /* background-color: #E9E8E6;*/
+}
+
+.slidebar_outside{
+  display:inline-flex;
+  position: absolute;
+  padding-left: 1em;
+  padding-top: 0.2em;
+  padding-bottom:0.2em;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+ .main{
+   background-color: #E9E9E9;
+   border-radius: 0.5em;
+   padding: 3em;
+   margin-top: 1em;
+   margin-bottom: 3em;
+   margin-left: 3em;
+   margin-right: 3em;
+   text-align: center;
+ }
+
+ .button_1:hover{
+   background-color: #CDFCF6;
+ }
+
+.header1{
+align-items: center;
+}
+
+.horizontal_1{
+font-family: cursive;
+width: 5vw;
+padding-right: 1vw;
+padding-left: 1vw;
+font-size: 15px;
+text-align: center;
+font-weight: bold;
+color: #787878;
+text-decoration: none;
+}
+
+.horizontal_2{
+font-family: cursive;
+width: 5vw;
+padding-top:1em;;
+font-size: 20px;
+text-align: center;
+font-weight: bold;
+color: #787878;
+text-decoration: none;
+}
+
+
+.horizontal_1:hover{
+  color: #26252D;
+  font-weight: bold;
+ }
+
+
+.content{
+  text-align: center;
+  justify-content: center;
+  font-size: 90%;
+}
+
+.heading{
+  font-size: 100%;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+ 
+.contact_btn{
+                background-color: #EDE4E0;
+                border-top-style: solid;
+                border-radius: 0.5em;
+                padding: 5px;
+}
+
+.contact_btn:hover{
+        background-color: #ecd6cd;
+}
+
+.contact_btn:focus{
+ background-color:#E9E9E9;
+}
+
+.btn1{
+  font-family: sans-serif; font-size: 1.3em; background-color: #EDE4E0; padding: 0.3em; border-radius: 0.8em; 
+}
+.btn1:hover{
+  background-color: #E9E9E9;
+  
+}
+
+body{
+  background-image: url("../photos/pattern51.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* used everywhere */
+
+.resume1{
+  background-color: #E9E9E9;
+  border-radius: 0.5em;
+  padding: 3em;
+  margin-top: 7em;
+  opacity: 0.9;
+  box-shadow: 1px 1px 2em;
+  margin-bottom: 3em;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-evenly;
+  align-items: stretch;
+  text-align: center;
+}
+
+.footer1{
+  padding: 1em;
+  margin: 0px;
+  background-color: #787878;
+  box-shadow: 1px 1px 2em cornsilk;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+.ft{
+  padding: 1em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin: 1em;
+  display: inline-flex;
+  width: 5%;
+  height: 5%;
+  justify-content: center;
+}
+
+.ct{
+  padding: 0em 1em 0em 1em;
+  width: 5%;
+  height: 5%;
+  justify-content: center;
+}
+
+
+.h45:before {
+  font-weight: 500;
+}
+.h45{
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.service{
+  border-radius: 2em; 
+  padding:0.5em; 
+  box-shadow: 1px 1px 1em;
+}
+
+.service:hover{
+box-shadow: 1px 1px 1em wheat;
+}
+
+.projectcard{
+  padding: 1em;
+  box-shadow: 1px 1px 0.5em;
+  margin: 1em;
+}
+
+.projectcd{
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
+
+.abttext{
+  text-align: justify;
+  justify-content: stretch;
+}
+
+.myskill{
+  padding: 2em;
+  padding-top: 0em;
+  padding-bottom: 1em; 
+  font-size:2em; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.skill_bar{
+  padding-bottom: 0px;
+}
+
+.serviceimages{
+  display: block; 
+  width: 340px;
+}
+
+.serviceimage{
+  display: block;
+  width: 300px;
+}
+
+.contactform{
+  padding:1px;
+}
+
+.prtbtn{
+  padding:1em;
+  background-color:whitesmoke;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 0.4em;
+}
+
+.prtbtn:hover{  
+  background-color: #E9E9E9;
+}
+
+.generalcontainer{
+  padding-top: 4rem; 
+  padding-bottom: 6rem; 
+  background-image: url('photos/pattern8.jpg');
+   background-size: cover;
+}
+
+@media (min-width: 200px) and (max-width: 513px) {
+  .abttext{
+    text-align: center;
+  }
+
+  .myskill{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .serviceimage{
+    display: block;
+    width: 230px;
+    height:170px;
+  }
+
+  .serviceimages{
+    display: block;
+    width: 250px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 991.9px) {
+  .skill_bar{
+    padding-bottom: 0.5em;
+  }
+
+  .contactform{
+    padding-top: 1.1em;
+  }
+}
