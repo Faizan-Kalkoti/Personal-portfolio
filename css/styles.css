@@ -133,6 +133,12 @@ body{
   text-align: center;
 }
 
+.resumetxt{
+  padding-bottom: 1em; 
+  font-size: larger;
+}
+
+
 .footer1{
   padding: 1em;
   margin: 0px;
