@@ -55,19 +55,60 @@ text-decoration: none;
 .horizontal_2{
 font-family: cursive;
 width: 5vw;
-padding-top:1em;;
-font-size: 20px;
+padding-top:0em;
+margin-top:3em;
+font-size: 25px;
 text-align: center;
 font-weight: bold;
 color: #787878;
 text-decoration: none;
 }
 
+.horizontal_2:hover{
+  color: #26252D;
+  font-weight: bold;
+  transform: scale(1.3);
+}
 
 .horizontal_1:hover{
   color: #26252D;
   font-weight: bold;
  }
+
+ .hmicn{
+  transform: scale(1.4);
+ }
+
+ 
+.hmnav{
+  margin: 1em 2em 0 2em; 
+  text-align: left;
+  background-color:#E9E9E9;
+}
+
+.hmft{
+  height: 3em;
+  width: 100%;
+  background-color: lightgray;
+  margin-top: 90%;
+  display: none;
+}
+
+.hmoffcanvas{
+  text-align: center;
+  align-items: center;
+  background-color: #E9E9E9;
+}
+
+
+.hmbtn{
+border: solid  0px transparent;
+transform: scale(1.2);
+}
+
+.hmbtn:hover{
+  transform: scale(1.5);
+}
 
 
 .content{
@@ -157,6 +198,12 @@ body{
   height: 5%;
   justify-content: center;
 }
+
+
+.ft:hover{
+  transform: scale(1.2);
+}
+
 
 .ct{
   padding: 0em 1em 0em 1em;
@@ -279,4 +326,40 @@ box-shadow: 1px 1px 1em wheat;
   .contactform{
     padding-top: 1.1em;
   }
+}
+
+@media (max-width:764px)
+{
+  .hmft{
+    height: 20%;
+    width: 100%;
+    background-color:transparent;
+    margin-top: 80%;
+    display: block;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 1230px)
+{
+  .serviceimage{
+    display: block;
+    width: 140px;
+    height:100px;
+  }
+
+  .serviceimages{
+    display: block;
+    width: 140px;
+    height: 90px;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1350px)
+{
+  
+}
+
+@media (min-width: 500px) and (max-width: 765px)
+{
+  /* here portfolio projects will come */ 
 }

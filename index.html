@@ -47,30 +47,47 @@
               <span class="navbar-toggler-icon"></span>
             </button>
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end hmoffcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      
         <div class="offcanvas-header">
-
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <h4 class="offcanvas-title" id="offcanvasNavbarLabel">
             <span style="font-size: 30px;
             font-family: cursive;
-            font-weight: bold;">Options</span></h4>
-
-          <div style="padding-top: 0.2em;">
+            font-weight: bold;"><button type="button" class="hmbtn" data-bs-dismiss="offcanvas"><img src="photos/menu.png" alt=""></button></span></h4>
+<div style="margin-top: 1em;"></div>
+          <div class="hmnav">
+            <li class="nav-item">
+              <a class="horizontal_2" href="#starthere"><img class="hmicn" src="photos/home.png" alt="home"> Home</a>    </li>
+               <li class="nav-item">
+              <a class="horizontal_2"  href="#Aboutme"><img class="hmicn" src="photos/user.png" alt="home"> About me</a>    </li>
+               <li class="nav-item">
+              <a class="horizontal_2" href="#resume"><img class="hmicn" src="photos/resume.png" alt="home"> Resume</a>    </li>
+               <li class="nav-item">
+              <a class="horizontal_2"  href="#portfolio"><img class="hmicn" src="photos/project.png" alt="home"> Portfolio</a>    </li>
+               <li class="nav-item">
+              <a class="horizontal_2"  href="#contact">
+                <img class="hmicn" src="photos/email.png" alt="home"> Contact</a>    </li>
           </div>
-         <li class="nav-item">
-         <a class="horizontal_2" aria-current="page" href="#starthere">Home</a>    </li>
-          <li class="nav-item">
-         <a class="horizontal_2" aria-current="page" href="#Aboutme">About me</a>    </li>
-          <li class="nav-item">
-         <a class="horizontal_2" class="nav-link scrollto" aria-current="page" href="#resume">Resume</a>    </li>
-          <li class="nav-item">
-         <a class="horizontal_2" aria-current="page" href="#portfolio">Portfolio</a>    </li>
-          <li class="nav-item">
-         <a class="horizontal_2" class="nav-link scrollto" aria-current="page" href="#contact">Contact</a>    </li>
+          <div style="padding-top: 1em;">
+        
+          </div>
+         
       </ul>
+        </div>
+        <div class="hmft"> 
+          <div class= "ft"> <a href="https://github.com/Faizan-Kalkoti"> <img style=" width: 2em; height: 2em;" src="photos/github.png" alt="github">
+          </a></div>
+          <div class ="ft"> <a href="https://www.linkedin.com/in/faizan-kalkoti-40994121a"> <img style=" width: 2em; height: 2em;" src="photos/linkedin.png" alt="linkedin"> 
+          </a></div>
+          <div class ="ft"> <a href="https://telegram.org"> <img style=" width: 2em; height: 2em;" src="photos/telegram.png" alt="telegram">  
+          </a></div>
+          <div style="padding-top: 0.6em;">
+          </div>
+          <p class="h45">Copyright © 2023 Faizan Kalkoti</p>
+          <hr>
+        </div>
 
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -438,7 +455,7 @@ padding: 1em">
             <img src="photos/data.png" class="card-img-top serviceimages" alt="image3" >
             <div class="card-body">
               <h5 class="card-title">Data analyst</h5>
-              <p class="card-text">Works with Tableu and MS Excel. Data analysis with python libraries like pandas and Numpy. knowledge of MySQL</p>
+              <p class="card-text">Can work with Tableu and MS Excel. Data analysis with python libraries like pandas and Numpy with expertise in MySQL</p>
             </div>
                  </div>
         </div>
@@ -513,7 +530,7 @@ padding: 1em">
         <div class="section-title">
           <h2><p style="padding-top: 0.5em; padding-bottom:0.5em;"> My Resume </p></h2>
           <p class="resumetxt">
-            Self-Motivated and a passionate student who has developed a reponsible approach towards a task. <br>
+            Self-Motivated and a passionate student with an exceptionally focused attitude.<br>
             A record of working in collaboration with team members to achieve goals.</p>
         </div>
 
@@ -537,8 +554,8 @@ padding: 1em">
               <h4>Bachelor of Engineering in Computer Science</h4>
               <h5>2020 - 2024</h5>
               <p><em>Trinity College of Engineering and Research, Pune</em></p>
-              <p>Affiliated with Savitri Bai Phule Pune University.  
-                Completed the degree with an SGPA of 9.0 and also secured the first place in third semester of the course.
+              <p>Student at Trinity college affiliated with Savitri Bai Phule Pune University.  
+                Completed the year with an SGPA of 9.11 and also secured the first place in third semester of the course.
               </p>
             </div>
           </div>
@@ -588,7 +605,7 @@ padding: 1em">
         </div>
   
         <div class="row projectcd">
-          <div class="col-lg-4 "> 
+          <div class="col-lg-4  col-md-6"> 
 
             <div class="card projectcard" style="width: 18rem;">
               <!-- <img src="..." class="card-img-top" alt="Php blog ">  --> 
@@ -600,7 +617,7 @@ padding: 1em">
             </div>
 
           </div>
-          <div class="col-lg-4 ">
+          <div class="col-lg-4 col-md-6">
 
             <div class="card projectcard" style="width: 18rem; ">
                 <!-- <img src="..." class="card-img-top" alt="Php blog ">  --> 
@@ -612,7 +629,7 @@ padding: 1em">
             </div>
 
           </div>
-          <div class="col-lg-4 ">
+          <div class="col-lg-4 col-md-6">
 
             <div class="card projectcard" style="width: 18rem; ">
                 <!-- <img src="..." class="card-img-top" alt="Php blog ">  --> 
