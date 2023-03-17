@@ -311,6 +311,10 @@ box-shadow: 1px 1px 1em wheat;
     height:170px;
   }
 
+  .projectcard{
+    transform: scale(0.8);
+  }
+
   .serviceimages{
     display: block;
     width: 250px;
