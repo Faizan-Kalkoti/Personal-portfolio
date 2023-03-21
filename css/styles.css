@@ -123,6 +123,15 @@ transform: scale(1.2);
   font-weight: bold;
 }
 
+.abt-top{
+  font-family: sans-serif;
+  font-size: 1.3em; 
+  text-align: center;
+  border-radius: 1.5em;
+padding: 1em; 
+}
+
+
  
 .contact_btn{
                 background-color: #EDE4E0;
@@ -222,13 +231,20 @@ body{
 }
 
 .service{
-  border-radius: 2em; 
+  border-radius: 1em; 
   padding:0.5em; 
-  box-shadow: 1px 1px 1em;
+  overflow: wrap;
+}
+
+.serviceimages{
+  display: block; 
+  width: 5em;
+  height: 7em;
 }
 
 .service:hover{
-box-shadow: 1px 1px 1em wheat;
+/* box-shadow: 1px 1px 1em wheat; */
+transform: scale(1.02);
 }
 
 .projectcard{
@@ -262,10 +278,7 @@ box-shadow: 1px 1px 1em wheat;
   padding-bottom: 0px;
 }
 
-.serviceimages{
-  display: block; 
-  width: 340px;
-}
+
 
 .serviceimage{
   display: block;
@@ -341,6 +354,10 @@ box-shadow: 1px 1px 1em wheat;
     margin-top: 80%;
     display: block;
   }
+
+  .service{
+    transform: scale(0.8);
+  }
 }
 
 @media (min-width: 765px) and (max-width: 1230px)
@@ -367,3 +384,26 @@ box-shadow: 1px 1px 1em wheat;
 {
   /* here portfolio projects will come */ 
 }
+
+
+
+
+/* swiper contents */
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }

@@ -15,13 +15,18 @@
      <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
      <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+     <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
     <meta http-equiv="X-UA_Compatible" content="IE-edge">
     <link rel="stylesheet" href="css/styles.css">
     <title>Faizan's portfolio</title>
   </head>
   <body>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 <!--Navigation bar is at the top -->
 
@@ -114,8 +119,6 @@
     </div>
 
 
-
-
     <section id="starthere"></section>
     <br>
 <!-- Starts content Front page-->
@@ -168,6 +171,7 @@
   border-radius: 1em;
   margin: 5%;
   margin-top: 7em;
+  margin-bottom: 1em;
   padding: 9em;
   padding-top: 10em;
   padding-bottom: 10em;
@@ -185,57 +189,28 @@
 <!-- About me section   -->
 <section id="about">
 
- <!-- <div style="background-color: white;
-align-items: center;
-justify-content: center;
-text-align: center;
-padding: 3%;">
 
-   <h2 style="padding: 2%;
-      align-items: center;
-      font-family: sans-serif;
-      font-weight: 500;
-      align-items: center;
-      justify-content: center;
-      text-align: center;">
-      About me</h2>
-
-    -->
-
-<div  style="padding: 1em;  margin: auto; display: flex; justify-content: space-around; flex-flow: row wrap;">
-
-<div style="margin: 1em; margin-top: 0em;  padding-left: 2em; padding-top: 2em; padding-bottom: 1em; padding-right: 1em; ">
-
-<img src="photos/hi2.png" alt="image" style="width: 17em; height: 25em;">
+<div class="row" style=" margin:0em; padding: 1px 5%;">
+      <div class="row" style="width: 100%;">
+        <div class="col-lg-4" style="text-align: center;">
+          <img src="photos/hi2.png" alt="image" style="width: 17em; height: 25em;">
+        </div>
+        <div class="col-lg-7" style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="abt-top">
+          An engineering student from Trinity College of engineering and research.
+          I wish to pursue my interests professionally in the fields of Data analysis, Cloud engineering,
+          Front - end web development and Application development. To learn
+          new technologies and languages and work with a team of talented people in the technical field.
+        </div>
+        <div style="text-align: center;">
+          <form action="#Aboutme">
+          <button class="btn1"> know more</button>
+          </form>
+        </div>
+        </div>
+      </div>
 </div>
 
-<div style="margin: auto; margin-top: 0em; padding: 2em;
-border-radius: 1em;
-justify-content: center;
-justify-items: stretch;
-font-family: sans-serif;
-align-items: center;
-text-align: center;
- ">
-
-<div style=" padding: 0.5em; padding-top: 4em; border-radius: 2em;">
-<div style="font-family: sans-serif; font-size: 1.3em; text-align: center;  border-radius: 1.5em;
-padding: 1em">
-  An engineering student from Trinity College of engineering and research.
-  <br>
-  I wish to pursue my interests professionally in the fields of Data analysis, Cloud <br> engineering,
-   Front - end web development and Application development. To learn<br>
- new technologies and languages and work with a team of talented people in the technical field.
-</div>
-<br>
-<form action="#Aboutme">
-<button class="btn1"> know more</button>
-</form>
-
-</div>
-</div>
-
-</div>
   </section>
 
   <!-- End About Section -->
@@ -262,7 +237,7 @@ padding: 1em">
           </div>
           <!--text-align: justify; justify-content: stretch;-->
 
-          <div class="col-lg-8" style="padding:2em; padding-top: 1em; font-size: 1.3em; font-family: Arial, Helvetica, sans-serif; ">
+          <div class="col-lg-8" style="padding:2em; padding-top: 1em; font-size: 1.2em; font-family: Arial, Helvetica, sans-serif; ">
 
             <div class="row">
               <div class="col-lg-6 col-md-12" style="font-size: 0.9em; padding-bottom:0.5em; text-align: start;">
@@ -419,98 +394,108 @@ padding: 1em">
 <div class="resume1" style="margin-top: 7em; background-image: url('photos/pattern8.jpg'); background-size: cover;" >
   <p style=" font-weight: bold;
   font-family: sans-serif;
-  "> <h2 style="padding-bottom: 2%;">Services</h2></p>
-
-
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
-  <div class="carousel-inner">
-    
-    <div class="carousel-item active" style="padding: 1em">
+  "> <h2 style="padding-bottom: 0em;">Services</h2></p>
+  
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
       
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100 service" style="align-items: center;">
-            
-              <img src="photos/Androidpng.png" class="card-img-top serviceimages" alt="image1">
-              <div class="card-body">
-                <h5 class="card-title">Android Developer</h5>
-                <p class="card-text">Android application development in android studio using java and kotlin for backend. XML and Jetpack Compose for User Interface.</p>
-              </div>
-                 </div>
-        </div>
-    
-        <div class="col">
-          <div class="card h-100 service" style="align-items: center;">
-            <img src="photos/web_ser.png" class="card-img-top serviceimage" alt="image2">
-            <div class="card-body">
-              <h5 class="card-title">Front-End Web Developer</h5>
-              <p class="card-text">I can develop resposive websites using HTML, CSS and JavaScript. 
-                Frameworks like Bootstrap, Tailwind and JQuery library</p>
-            </p>
-            </div>
-                 </div>
-        </div>
-    
-        <div class="col">
-          <div class="card h-100 service" style="align-items: center;">
-            <img src="photos/data.png" class="card-img-top serviceimages" alt="image3" >
-            <div class="card-body">
-              <h5 class="card-title">Data analyst</h5>
-              <p class="card-text">Can work with Tableu and MS Excel. Data analysis with python libraries like pandas and Numpy with expertise in MySQL</p>
-            </div>
-                 </div>
+      <div class="card h-100 service" style="align-items: center;">      
+        <img src="photos/Androidpng.png" class="card-img-top serviceimages" alt="image1">
+        <div class="card-body">
+          <h5 class="card-title">Android Developer</h5>
+          <p class="card-text">Android application development in android studio using java and kotlin for backend. XML and Jetpack Compose for User Interface.</p>
         </div>
       </div>
-
     </div>
-    <div class="carousel-item" style="padding: 1em">
-      
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col" style="align-self: center;">
-          <div class="card h-100 service">
-            <img src="photos/flutter.png" class="card-img-top" alt="image4">
-            <div class="card-body">
-              <div style="height: 17px;"></div>
-              <h5 class="card-title">Flutter developer</h5>
-              <p class="card-text">Development of multi-platform applications using flutter framework. Using Dart language for flutter application development.</p>
-            </div>
-               </div>
+
+    <div class="swiper-slide">
+
+      <div class="card h-100 service" style="align-items: center;">
+        <img src="photos/web_ser.png" style="height: 7em; width: 11em; margin-top:0.7em ;" class="card-img-top" alt="image2"> 
+        <div class="card-body">
+          <h5 class="card-title">Front-End Web Developer</h5>
+          <p class="card-text">I can develop resposive websites using HTML, CSS and JavaScript. 
+            Frameworks like Bootstrap, Tailwind and JQuery library</p>
+        </p>
         </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
       
-        <div class="col"   style="align-self: center;">
-          <div class="card h-100 service">
-            <img src="photos/django.png" class="card-img-top" alt="image5">
-            <div class="card-body">
-              <div style="height: 17px;"></div>
-              <h5 class="card-title">Django developer</h5>
-              <p class="card-text">Full stack web-application development using Django framework in python language for backend.</p>
-            </div>
-               </div>
+      <div class="card h-100 service" style="align-items: center;">
+        <img src="photos/data.png" style="height: 8em;" class="card-img-top" alt="image3" >
+        <div class="card-body">
+          <h5 class="card-title">Data Analysis</h5>
+          <p class="card-text">Can work with Tableu and MS Excel. Data analysis with python libraries like pandas and Numpy with expertise in MySQL</p>
         </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+    
+      <div class="card h-100 service">
+        <img src="photos/flutter.png" class="card-img-top" style="height: 8em;" alt="image4">
+        <div class="card-body">
+          <h5 class="card-title">Flutter developer</h5>
+          <p class="card-text">Development of multi-platform applications using flutter framework. Using Dart language for flutter application development.</p>
+        </div>
+           </div>
+    </div>
+
+    <div class="swiper-slide">
+     
+      <div class="card h-100 service">
+        <img src="photos/django.png" class="card-img-top"  alt="image5">
+        <div class="card-body">
+          <h5 class="card-title">Django developer</h5>
+          <p class="card-text">Full stack web-application development using Django framework in python language for backend.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
       
-        <div class="col"   style="align-self: center;">
-          <div class="card h-100 service" style="align-items: center;">
-            <img src="photos/react.png" class="card-img-top" alt="image5">
+       <div class="card h-100 service" style="align-items: center;">
+            <img src="photos/react.png" class="card-img-top" style="height: 8em;" alt="image5">
             <div class="card-body">
-              <div style="height: 17px;"></div>
               <h5 class="card-title">React developer</h5>
               <p class="card-text">React developer for optimizing front-end of the websites. Experienced in using React library for JavaScript.</p>
             </div>
-               </div>
-          </div>
-             </div>
-      </div>
-  </div>
+       </div>
+    </div>
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  </div>
+  <div class="swiper-pagination"></div>
 </div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 40,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
 
 </div>
 <!-- services pasrt ended-->
@@ -606,8 +591,9 @@ padding: 1em">
   </p>
         </div>
   
-        <div class="row projectcd" >
-          <div class="col-lg-4  col-md-6 col-sm-6" > 
+        <div class="row projectcd"  style="width: 100%;">
+
+          <!-- <div class="col-lg-4  col-md-6 col-sm-6" >  -->
 
             <div class="card projectcard" style="width: 18rem;">
               <!-- <img src="..." class="card-img-top" alt="Php blog ">  --> 
@@ -618,8 +604,8 @@ padding: 1em">
               </div>
             </div>
 
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6">
+          <!-- </div>
+          <div class="col-lg-4 col-md-6 col-sm-6"> -->
 
             <div class="card projectcard" style="width: 18rem; ">
                 <!-- <img src="..." class="card-img-top" alt="Php blog ">  --> 
@@ -630,8 +616,8 @@ padding: 1em">
               </div>
             </div>
 
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6">
+          <!-- </div>
+          <div class="col-lg-4 col-md-6 col-sm-6"> -->
 
             <div class="card projectcard" style="width: 18rem; ">
                 <!-- <img src="..." class="card-img-top" alt="Php blog ">  --> 
@@ -642,7 +628,7 @@ padding: 1em">
               </div>
             </div>
 
-          </div>
+          <!-- </div> -->
         </div>
 <br>
 <br>
