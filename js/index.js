@@ -76,4 +76,35 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
+  // intersection Observer API for
+  // progress bar
+const observed_element = document.querySelector('.myskill');
+const htmlpg = document.querySelector('.htmlpg');
+// 
+
+htmlpg.classList.add('html-progy');
+
+// Create a new intersection observer instance
+const observer = new IntersectionObserver((entries, observer) => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // If the element is in view, add the 'animate' class
+      htmlpg.classList.add('html-progy');
+      observer.unobserve(entry.target);
+
+    } else {
+      // If the element is not in view, remove the 'animate' class
+      htmlpg.classList.remove('html-progy');
+    }
+  })
+  });
+//   }, {
+//   // set the options to trigger the callback function only once
+//   // once: true
+// });
+// Observe the element
+observer.observe(observed_element);
+
+
 

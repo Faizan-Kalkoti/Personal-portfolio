@@ -3,6 +3,16 @@
   padding: 0;
 }
 
+body{
+  background:/* linear-gradient(to right bottom,rgb(214, 210, 211), rgb(171, 171, 171), rgb(100,100,100)); */ url("../photos/pattern6.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
 .slidebar{
   text-align: center;
   display: flex;
@@ -131,17 +141,61 @@ transform: scale(1.2);
 padding: 1em; 
 }
 
+/* (Start of) - First section styling */
+.main-inner-top
+{
+  text-align: center;
+  margin-top: 3.5em;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+}
 
- 
+.image-circle{
+  width: 10em; 
+  height:10em ;
+  border-width: 0.3em;
+  border-style: solid;
+  border-radius: 10em;
+  box-shadow: 0px 0px 1em rgb(255, 255, 255);
+  opacity: 1;
+}
+
+.first-section-bg{
+  background-image: url(../photos/pattern7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1em;
+  box-shadow: 25px 25px 2em rgb(67, 67, 67);
+
+  margin: 5%;
+  margin-top: 7em;
+  margin-bottom: 1em;
+
+  padding: 9em;
+  padding-top: 10em;
+  padding-bottom: 10em;
+
+  opacity: 1;
+  width: 90%;  
+  height: 25em;
+}
+/* End of - First Section styling */
+
+
+ /* button styling */
 .contact_btn{
-                background-color: #EDE4E0;
-                border-top-style: solid;
-                border-radius: 0.5em;
-                padding: 5px;
+  background-color: #EDE4E0;
+  border-top-style: solid;
+  border-radius: 0.5em;
+  padding: 5px;
 }
 
 .contact_btn:hover{
-        background-color: #ecd6cd;
+  background-color: #ecd6cd;
 }
 
 .contact_btn:focus{
@@ -149,21 +203,23 @@ padding: 1em;
 }
 
 .btn1{
-  font-family: sans-serif; font-size: 1.3em; background-color: #EDE4E0; padding: 0.3em; border-radius: 0.8em; 
-}
-.btn1:hover{
-  background-color: #E9E9E9;
-  
+  font-family: sans-serif; 
+  font-size: 1.3em; 
+  background-color: #cecece;
+  padding: 0.4em;
+  border-radius: 0.8em; 
+  transition: 0.5s;
 }
 
-body{
-  background-image: url("../photos/pattern51.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+.btn1:hover{
+  background-color: #eeecec;
+  scale: 1.1;
+  transform: translate(-5px, -5px);
+  transition: 1s;
+  box-shadow: 10px 10px 1em rgb(90, 90, 90) ; 
 }
+/* button styling end */
+
 
 
 /* used everywhere */
@@ -308,6 +364,51 @@ transform: scale(1.02);
    background-size: cover;
 }
 
+
+/* For progress bars that i am going to add */
+.progress{
+  padding: 8px;
+  border-radius: 10px;
+  height: 25px;
+  background-color: rgb(232, 232, 232);
+  box-shadow: 1px 1px 10px rgb(120, 120, 120);
+}
+
+.progress-bar{
+  border-radius: 10px;
+  width: 0%;
+}
+
+/* .html-progy{
+  animation-name: progressy-html;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes progressy-html {
+  0%{ width: 0% }
+  100%{ width: 60%}
+}
+
+.progy{
+  animation-name: progressy;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes progressy {
+  0%{ width: 0% }
+  100%{ width: 80%}
+} */
+/* End of the progress bar styling */
+
+
+
+
+
+/* Media Queries to make the website responsive */
 @media (min-width: 200px) and (max-width: 513px) {
   .abttext{
     text-align: center;
