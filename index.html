@@ -634,8 +634,16 @@
   </div>
 </div>
 
-<!--Contact me Section -->
 
+
+
+  <!-- Start of the email js section -->
+
+    <!-- End of the contact me section -->
+
+
+
+<!--Contact me Section -->
 <section id="contact" class="contact">
   <br>
   <div class="resume1" style="padding-top: 5rem; padding-bottom: 6rem; background-image: url('photos/pattern8.jpg'); background-size: cover;">
@@ -691,23 +699,23 @@
             <form action="">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="nameform" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="emailform" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+                <textarea class="form-control" id="messageform" name="message" rows="8" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 
               </div>
               <div>
-                <button type="submit" class="contact_btn">
+                <button type="submit" id="formsubmitbutton"   class="contact_btn">
                 Send Message</button>
              </div>
             </form>
@@ -723,8 +731,42 @@
 </div>
 
 
-<!--Start of the footer-->
+  <!-- JavaScript for the form (Email.js working) -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+              // https://dashboard.emailjs.com/admin/account
+              emailjs.init('35_X_ZfPrAvH2BAes');
+          })();
+  </script>
+  
+  <script type="text/javascript">
+    document.getElementById("formsubmitbutton").addEventListener("click", hello);
 
+    function hello(event){
+      event.preventDefault();
+      to_name0 = document.getElementById("nameform").value
+      from_name0 = document.getElementById("emailform").value
+      message0 = document.getElementById("messageform").value
+
+      alert(to_name0+" "+from_name0+" "+message0);
+
+
+      emailjs.send("service_doatrlk","template_l3cj4ne",{
+            to_name: to_name0,
+            from_name: from_name0,
+            message: message0,
+            reply_to: "failskfdslk -gudipo"}, '35_X_ZfPrAvH2BAes');
+    }
+  </script>
+
+
+
+
+
+
+
+<!--Start of the footer-->
 <hr style="border-bottom: 0.2em; border-style:solid; border-color:floralwhite; position:relative;
 bottom: -1em; ">
 
@@ -742,6 +784,11 @@ bottom: -1em; ">
 
 <!--
   End of the footer-->
+
+
+
+
+  
 
   </body>
 </html>
