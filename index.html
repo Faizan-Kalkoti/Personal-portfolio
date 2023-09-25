@@ -748,11 +748,17 @@
       to_name0 = document.getElementById("nameform").value
       from_name0 = document.getElementById("emailform").value
       message0 = document.getElementById("messageform").value
+      subject0 = document.getElementById("subjectform").value
 
       // alert(to_name0+" "+from_name0+" "+message0);
+      message0 = "Subject: " + document.getElementById("subjectform").value + "\n Message:  "+ message0
 
-
-      emailjs.send("service_doatrlk","template_l3cj4ne",{
+      if(message0.length === 0 || to_name0.length === 0 || from_name0.length === 0 || subject0.length === 0)
+      {
+        alert("Please enter all the values!")
+      }
+      else{
+        emailjs.send("service_doatrlk","template_l3cj4ne",{
             to_name: to_name0,
             from_name: from_name0,
             message: message0,
@@ -768,9 +774,11 @@
                   console.log('FAILED...', error);
                 alert("Failed to send message!")}
             );
+      }
+     
     }
   </script>
-
+<!-- End of sending the email through email.js -->
 
 
 
