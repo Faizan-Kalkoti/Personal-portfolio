@@ -198,7 +198,7 @@
       <div class="row">
           <p class="abttextcol4" style="">
           An enthusiatic Software developer and a quick learner.
-          I am a student with keen interest in the field of Data analysis and Cloud engineering.
+          I am a student with keen interest in the field of Machine Learning and Cloud engineering.
           I enjoy learning new things and sharing my knowledge with my collegues.
         </p>
           <div class="col-lg-4">
@@ -209,26 +209,7 @@
 
             <div class="row">
               <div class="col-lg-6 col-md-12" style="font-size: 0.9em; padding-bottom:0.5em; text-align: start;">
-                <p style="font-weight:bold;  display: inline;"> Birthday: </p> 28th December 2002 
-              </div>
-              <div class="col-lg-6 col-md-12" style="font-size: 0.9em; padding-bottom:0.5em; text-align: start;">
-                <p style="font-weight:bold; display: inline;"> Age:</p> 20
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6 col-md-12" style="font-size: 0.9em; padding-bottom:0.5em; text-align: start;">
-                <p style="font-weight:bold; display: inline;"> Website:</p>
-                <a style="text-decoration: none; color: black;" href="https://faizan-kalkoti.github.io/Personal-portfolio/">Faizan-Kalkoti.io</a> 
-              </div>
-              <div class="col-lg-6 col-md-12" style="font-size: 0.9em; padding-bottom:0.5em; text-align: start;">
-                <p style="font-weight:bold; display: inline;"> Degree:</p> Batchelor of Engineering
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6 col-md-12" style="font-size: 0.9em; padding-bottom:0.5em; text-align: start;">
-                <p style="font-weight:bold; display: inline;"> Phone:</p> +91 775 590 9929
+                <p style="font-weight:bold; display: inline;"> City:</p> Pune, Maharashtra
               </div>
               <div class="col-lg-6 col-md-12" style="font-size: 0.9em; padding-bottom:0.5em; text-align: start;">
                 <p style="font-weight:bold; display: inline;"> Email:</p> Faizan.kalkoti@gmail.com
@@ -237,16 +218,40 @@
 
             <div class="row">
               <div class="col-lg-6 col-md-12" style="font-size: 0.9em; padding-bottom:0.5em; text-align: start;">
-                <p style="font-weight:bold; display: inline;"> City:</p> Pune, Maharashtra
+                <p style="font-weight:bold;  display: inline;"> Year of Birth: </p> 2002
               </div>
               <div class="col-lg-6 col-md-12" style="font-size: 0.9em; padding-bottom:0.5em; text-align: start;">
-                <p style="font-weight:bold; display: inline;"> Status:</p> Available
+                <p style="font-weight:bold; display: inline;"> Age:</p> <span id="age">21 </span>
               </div>
             </div>
+
+            <!-- script for calculating age -->
+            <script>
+              const age = document.getElementById('age');
+              const startYear = 2002;
+              // Current year
+              const currentYear = new Date().getFullYear();
+              // Calculate the difference
+              const differenceInYears = currentYear - startYear;
+              age.innerText = differenceInYears
+            </script>
+            <!-- end of the script -->
+
+            <div class="row">
+              <div class="col-lg-6 col-md-12" style="font-size: 0.9em; padding-bottom:0.5em; text-align: start;">
+                <p style="font-weight:bold; display: inline;"> Website:</p>
+                <a class="linker" style="text-decoration: none; color: black;" href="https://faizan-kalkoti.github.io/Personal-portfolio/">Faizan-Kalkoti</a> 
+              </div>
+              <div class="col-lg-6 col-md-12" style="font-size: 0.9em; padding-bottom:0.5em; text-align: start;">
+                <p style="font-weight:bold; display: inline;"> Degree:</p> Bachelor of Engineering
+              </div>
+            </div>
+
+
               <br>
 
            <p class="abttext">
-            I excel in Front-end web development and possess proficiency in Full Stack Django development. 
+            I excel in Full Stack web development and possess proficiency in Python - Django development. 
             My work ethic is characterized by diligence and a strong commitment to meeting deadlines.
              I exhibit effective leadership qualities and foster seamless communication with my colleagues.
               Collaboration is a strength of mine, as I effortlessly establish rapport with team members.
@@ -256,35 +261,39 @@
 
 
         <!-- Skills section-->
+        <!-- start of the first row -->
         <div class="row">
         <div class="myskill"> My skills </div> 
-        <div class="col-lg-6" style="text-align: center; padding:1em 0em 1em;">
-          
+
+        <div class="col-lg-6" style="text-align: center; padding:1em 0em 1em;">       
           <div class="row" style="align-items: center;">  
-            <div class="col-lg-2 skill_bar" > HTML</div>
-        <div class="col-lg-10">      
-            <div class="progress d-flex">
-            <div class="progress-bar bg-success htmlpg" role="progressbar" 
-            aria-label="Info example" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>   
-        </div>    
+             <div class="col-lg-2 skill_bar" > Python</div>
+             <div class="col-lg-10">      
+                  <div class="progress d-flex">
+                       <div class="progress-bar bg-success htmlpg" role="progressbar" 
+                            aria-label="Info example" style="width: 70%" aria-valuenow="50" 
+                            aria-valuemin="0" aria-valuemax="100">
+                       </div>
+                  </div>   
+             </div>    
           </div>
+        </div>
         
-         </div>
         <div class="col-lg-6" style="padding:1em 0em 1em;">
-       
-          <div class="row" style="align-items: center;">  
-            <div class="col-lg-2 skill_bar" > CSS</div>
-        <div class="col-lg-10">      
-            <div class="progress d-flex">
-            <div class="progress-bar bg-success" role="progressbar" 
-            aria-label="Info example" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>   
-        </div>    
+          <div class="row" style="align-items: center;">
+            <div class="col-lg-2 skill_bar"> Django</div>
+            <div class="col-lg-10">
+              <div class="progress d-flex">
+                <div class="progress-bar bg-success" role="progressbar" aria-label="Info example" style="width: 60%"
+                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
           </div>
 
         </div>
-        </div>
+        
+      </div>
+      <!-- end of the first row -->
 
         <div class="row" >
           <div class="col-lg-6" style="text-align: center; padding:1em 0em 1em;">
@@ -319,11 +328,11 @@
             <div class="col-lg-6" style="text-align: center; padding:1em 0em 1em;">
               
               <div class="row" style="align-items: center;">  
-                <div class="col-lg-2 skill_bar" > PHP</div>
+                <div class="col-lg-2 skill_bar" > .NET</div>
             <div class="col-lg-10 ">      
                 <div class="progress d-flex" >
                 <div class="progress-bar bg-success" role="progressbar" 
-                aria-label="Info example" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                aria-label="Info example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
               </div>   
             </div>    
               </div>
@@ -343,36 +352,44 @@
             </div>
           </div>
 
-
-          <div class="row" >
+        <!-- row start -->
+        <!-- <div class="row">
             <div class="col-lg-6" style="text-align: center; padding:1em 0em 1em;">
               
-              <div class="row" style="align-items: center;">  
-                <div class="col-lg-2 skill_bar" >Django</div>
-            <div class="col-lg-10 ">      
-                <div class="progress d-flex" >
-                <div class="progress-bar bg-success progy" role="progressbar" 
-                aria-label="Info example" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>   
-            </div>    
-              </div>
+                <div class="row" style="align-items: center;">  
+                   <div class="col-lg-2 skill_bar" >Django</div>
+                   <div class="col-lg-10 ">      
+                        <div class="progress d-flex" >
+                            <div class="progress-bar bg-success progy" role="progressbar" 
+                                  aria-label="Info example" style="width: 80%" aria-valuenow="50" 
+                                  aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>   
+                   </div>    
+                </div>
             
-             </div>
-            <div class="col-lg-6"  style="padding:1em 0em 1em;">
-           
+            </div>
+
+            <div class="col-lg-6"  style="padding:1em 0em 1em;"> 
               <div class="row" style="align-items: center; ">  
                 <div class="col-lg-2 skill_bar" > Python</div>
-            <div class="col-lg-10">      
-                <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" 
-                aria-label="Info example" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>   
-            </div>    
+              
+                <div class="col-lg-10">      
+                  <div class="progress">
+                   <div class="progress-bar bg-success" role="progressbar" 
+                         aria-label="Info example" style="width: 70%" aria-valuenow="50" 
+                         aria-valuemin="0" aria-valuemax="100">
+                   </div>
+                  </div>   
+                </div>    
               </div>
-            </div>
-          </div>
 
-      </div>
+            </div>
+
+          </div> -->
+          <!-- end of the row -->
+
+        </div>
   
        </div>
       
@@ -393,16 +410,29 @@
   
 <div class="swiper mySwiper">
   <div class="swiper-wrapper">
+
+
     <div class="swiper-slide">
+     
+      <div class="card h-100 service">
+        <img src="photos/django.png" class="card-img-top"  alt="image5">
+        <div class="card-body">
+          <h5 class="card-title">Django developer</h5>
+          <p class="card-text">Full stack web-application development using Django framework in python language for backend.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="swiper-slide"> 
       
-      <div class="card h-100 service" style="align-items: center;">      
+       <div class="card h-100 service" style="align-items: center;">      
         <img src="photos/Androidpng.png" class="card-img-top serviceimages" alt="image1">
         <div class="card-body">
           <h5 class="card-title">Android Developer</h5>
           <p class="card-text">Android application development in android studio using java and kotlin for backend. XML and Jetpack Compose for User Interface.</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="swiper-slide">
 
@@ -411,7 +441,7 @@
         <div class="card-body">
           <h5 class="card-title">Front-End Web Developer</h5>
           <p class="card-text">I can develop resposive websites using HTML, CSS and JavaScript. 
-            Frameworks like Bootstrap, Tailwind and JQuery library</p>
+            Frameworks like Bootstrap and JQuery library</p>
         </p>
         </div>
       </div>
@@ -430,23 +460,13 @@
 
 
     <div class="swiper-slide">
-     
-      <div class="card h-100 service">
-        <img src="photos/django.png" class="card-img-top"  alt="image5">
-        <div class="card-body">
-          <h5 class="card-title">Django developer</h5>
-          <p class="card-text">Full stack web-application development using Django framework in python language for backend.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-slide">
       
        <div class="card h-100 service" style="align-items: center;">
-            <img src="photos/php2.png" class="card-img-top" style="height: 8em;" alt="image5">
+            <img src="photos/net_image2.png" class="card-img-top" style="height: 8em;" alt="image5">
             <div class="card-body">
-              <h5 class="card-title">PHP developer</h5>
-              <p class="card-text">I create dynamic websites using PHP, focusing on server-side functionality, databases, and user experience. </div>
+              <h5 class="card-title">.NET developer</h5>
+              <p class="card-text">
+                Can build APIs in .NET Framework, web forms, MVC applications. Proficient in MS SQL, with C# programs</div>
        </div>
     </div>
 
@@ -512,8 +532,7 @@
               <p><em>Enthusiatic and deadline-driven front-end developer with more than a year of experience designing and developing websites</em></p>
               <p>
               <ul>
-                <li>B.T.Kawde Road, Pune-411001</li>
-                <li>+91 7755909929</li>
+                <li>Pune - Maharashtra</li>
                 <li>faizan.kalkoti@gmail.com</li>
               </ul>
               </p>
